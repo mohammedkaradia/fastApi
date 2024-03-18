@@ -5,10 +5,7 @@ import mysql.connector
 
 connection = "mysql+mysqlconnector://root:password@mysql/test"
 
-
-# connection = mysql.connector.connect(
-#     user='root', password='root', host='mysql', port="27017", database='test'
-# )
+# connection = "mysql+mysqlconnector://root@localhost:3306/test" //locally through xamp
 
 engine = create_engine(connection, pool_size= 10, max_overflow= 30)
 
